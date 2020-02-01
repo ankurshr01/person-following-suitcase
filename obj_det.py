@@ -33,27 +33,27 @@ while True:
             sum_h=sum_h+hg
             if(x==99):
                 if sum_x<xp:
-                    print("right: ", str(xp-sum_x)+" px/frame |",end='')
+                    print("right: ", str(xp-sum_x)+" px/frame |")
                 elif sum_x>xp:
-                    print(" left: ", str(sum_x-xp)+" px/frame |",end='')
+                    print(" left: ", str(sum_x-xp)+" px/frame |")
                 else:
-                    print(' same: ', str(xp-sum_x)+" px/frame |",end='')
+                    print(' same: ', str(xp-sum_x)+" px/frame |")
                 xp = sum_x
                 if sum_y>yp:
-                    print("down: ", str(sum_y-yp)+" px/frame |",end='')
+                    print("down: ", str(sum_y-yp)+" px/frame |")
                 elif sum_y<yp:
-                    print(" top: ", str(yp-sum_y)+" px/frame |",end='')
+                    print(" top: ", str(yp-sum_y)+" px/frame |")
                 else:
-                    print('same: ', str(sum_y-yp)+" px/frame |",end='')
+                    print('same: ', str(sum_y-yp)+" px/frame |")
                 yp = sum_y
 
 
                 if sum_h<hp:
-                    print('far', str(hp-sum_h)+" px/frame |",end='')
+                    print('far', str(hp-sum_h)+" px/frame |")
                 elif sum_h>hp:
-                    print('near', str(sum_h-hp)+" px/frame |",end='')
+                    print('near', str(sum_h-hp)+" px/frame |")
                 else:
-                    print('same', str(sum_h-hp)+" px/frame |",end='')
+                    print('same', str(sum_h-hp)+" px/frame |")
                 hp = sum_h
                 i=0;
         
